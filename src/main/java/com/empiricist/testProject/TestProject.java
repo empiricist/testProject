@@ -1,15 +1,21 @@
 package com.empiricist.testProject;
 
 
+import com.empiricist.testProject.reference.Reference;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import com.empiricist.testProject.proxy.IProxy;
 
-@Mod(modid = "testProject", name = "Test Project", version="1.7.10-0.1")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class TestProject {
-    @Mod.Instance("testProject")
+    @Mod.Instance(Reference.MOD_ID)
     public static TestProject instance;//instance of mod
+
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+    public static IProxy proxy;//holds proxy (ClientProxy on client, ServerProxy on server)
 
     //Preinit - config, network, items, blocks
     @Mod.EventHandler

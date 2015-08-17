@@ -1,0 +1,16 @@
+#Comment format, make sure no spaces by the =
+
+#Items
+item.testproject:fan.name=Paper Fan
+item.testproject:staff.name=Glider Staff
+
+#Blocks
+tile.testproject:test.name=Test Block
+
+#Keybinds
+keys.testproject.category=Test Project
+keys.testproject.charge=Charge
+keys.testproject.release=Release
+
+#CreativeTab
+itemGroup.testproject=Test Project

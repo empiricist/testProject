@@ -1,0 +1,12 @@
+[23:28:19] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[23:28:25] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.NullPointerException
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1140) ~[guava-17.0.jar:?]
+	at cpw.mods.fml.common.Loader.sortModList(Loader.java:216) ~[Loader.class:?]
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:472) ~[Loader.class:?]
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87) ~[FMLServerHandler.class:?]
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:313) ~[FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:120) ~[DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:455) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:762) [MinecraftServer$2.class:?]
+[23:28:26] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Ken\Documents\Mod Stuff\testProject\eclipse\.\crash-reports\crash-2015-08-13_23.28.25-server.txt
